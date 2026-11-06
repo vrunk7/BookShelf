@@ -1,0 +1,270 @@
+.header {
+    background-color: #ffffff;
+    padding: 16px 7%;
+    border-bottom: 1px solid #e8e9e3;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand-icon {
+    font-size: 32px;
+    color: #173b2b;
+}
+
+.brand h2 {
+    font-size: 22px;
+    color: #173b2b;
+}
+
+.brand p {
+    font-size: 12px;
+    color: #777;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 40px auto;
+}
+
+.welcome-section h1 {
+    color: #173b2b;
+    font-size: 30px;
+}
+
+.welcome-section p {
+    color: #777;
+    margin-top: 8px;
+}
+
+.library-section {
+    margin-top: 35px;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-heading h2 {
+    color: #173b2b;
+}
+
+.section-heading p {
+    color: #888;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.add-btn {
+    background-color: #173b2b;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 9px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.search-input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #e5e7e0;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    font-size: 15px;
+    outline: none;
+}
+
+.search-input:focus {
+    border-color: #668b73;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.book-card {
+    background-color: white;
+    border: 1px solid #e9e9e4;
+    border-radius: 14px;
+    overflow: hidden;
+    padding: 15px;
+    transition: transform 0.2s;
+}
+
+.book-card:hover {
+    transform: translateY(-4px);
+}
+
+.book-cover {
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f1e9;
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+.book-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.cover-placeholder {
+    text-align: center;
+    color: #668b73;
+}
+
+.cover-placeholder span {
+    font-size: 55px;
+}
+
+.book-info {
+    padding: 15px 3px;
+}
+
+.book-id {
+    font-size: 11px;
+    color: #668b73;
+    background-color: #edf3ed;
+    padding: 4px 8px;
+    border-radius: 5px;
+}
+
+.book-info h3 {
+    margin-top: 12px;
+    color: #24372c;
+    font-size: 17px;
+}
+
+.author {
+    color: #777;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.book-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.book-actions button {
+    flex: 1;
+    padding: 9px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background-color: #edf1ec;
+    color: #315b40;
+}
+
+.delete-btn {
+    background-color: #fbeeee;
+    color: #b74747;
+}
+
+.empty-message {
+    color: #777;
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 30px;
+}
+
+@media (max-width: 850px) {
+    .book-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .book-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading {
+        align-items: flex-start;
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    .welcome-section h1 {
+        font-size: 25px;
+    }
+}
+
+.form-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    z-index: 100;
+}
+
+.book-form {
+    background: white;
+    width: 100%;
+    max-width: 450px;
+    padding: 28px;
+    border-radius: 15px;
+}
+
+.book-form h2 {
+    color: #173b2b;
+    margin-bottom: 22px;
+}
+
+.book-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.book-form label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #35483b;
+}
+
+.book-form input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.form-actions button {
+    padding: 11px 17px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.save-btn {
+    background: #173b2b;
+    color: white;
+}
